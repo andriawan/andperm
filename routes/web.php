@@ -13,6 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/home', function () {
+	dump(Auth::user());
+    return view('dashboard');
+});
+
 Route::get('/', function () {
     return view('welcome');
 });
