@@ -14,7 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/home', function () {
-	dump(Auth::user());
     return view('dashboard');
 });
 
